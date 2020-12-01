@@ -25,7 +25,7 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: red;
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +35,9 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.prefix-example {
+  writing-mode: horizontal-tb;
+  scroll-snap-type: y mandatory;
 }

@@ -4,6 +4,9 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// polyfill
+import 'core-js/features/string/pad-start'
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
