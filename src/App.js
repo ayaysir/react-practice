@@ -12,6 +12,7 @@ import { BrowserRouter, Link, Route, Redirect } from 'react-router-dom';
 import { useState } from 'react';
 import WidthPrinter from './day2/WidthPrinter';
 import Top from './day2/Context1';
+import Day3 from './day3/Day3'
 
 function Day2() {
 
@@ -73,10 +74,12 @@ function App() {
       <BrowserRouter>
         <Link to="/day1">Day 1</Link>
         <Link to="/day2">Day 2</Link>
+        <Link to="/day3">Day 3</Link>
         <Route path="/day1" component={Day1} />
         <Route path="/day2" component={Day2} />
+        <Route path="/day3" component={Day3} />
         <Route exact path="/">
-          <Redirect to="/day2" />
+          <Redirect to="/day3" />
         </Route>
       </BrowserRouter>
       
